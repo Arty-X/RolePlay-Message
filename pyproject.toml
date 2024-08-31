@@ -1,0 +1,11 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "endstone-roleplay-message"
+version = "0.1.0"
+description = "Simulation of chat actions for role-playing."
+
+[project.entry-points."endstone"]
+roleplay-message = "endstone_roleplay_message:RolePlayMessage"
