@@ -10,4 +10,4 @@ rp_message.command.e
 
 ## Demonstration
 
-![Screenshot](https://github.com/{username}/{repository}/raw/{branch}/{path}/image.png)
+![Screenshot](https://github.com/Arty-X/RolePlay-Message/blob/main/Screenshot.png)
