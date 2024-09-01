@@ -32,9 +32,10 @@ class RolePlayMessage(endstone.plugin.Plugin):
 
     def on_command(self, sender: CommandSender, command: Command, args: list[str]) -> bool:
         if command.name == "e":
-            if args[0] == "":
-                sender.send_message(f"{ColorFormat.YELLOW}Usage /e (message)")
+                        if args[0] == "":
+                self.server.broadcast_message(f"{ColorFormat.YELLOW}Usage /e (message)")
             else:
-                sender.send_message(f"{sender.name} {ColorFormat.BOLD}{ColorFormat.GRAY}>> "
-                                    f"{ColorFormat.RESET}{ColorFormat.LIGHT_PURPLE}{args[0]}{ColorFormat.RESET}")
+                self.server.broadcast_message(f"{sender.name} {ColorFormat.BOLD}{ColorFormat.GRAY}>> "
+                                              f"{ColorFormat.RESET}{ColorFormat.LIGHT_PURPLE}{args[0]}"
+                                              f"{ColorFormat.RESET}")
         return True
