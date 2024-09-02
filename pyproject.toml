@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "endstone-roleplay-message"
-version = "0.1.1"
+version = "0.1.2"
 description = "Simulation of chat actions for role-playing."
 
 [project.entry-points."endstone"]
